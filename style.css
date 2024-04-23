@@ -1,3 +1,11 @@
+.poppins-thin {
+    font-family: "Poppins", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+  }
+
+
+
 /* my font size's media query start */
 html {
     font-size: 62.5%;
@@ -46,6 +54,80 @@ html {
 
 
 /* my form start */
+
+html body{
+    background: url(https://getwallpapers.com/wallpaper/full/e/8/8/587271.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    font-family: "Poppins", sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form{
+    background-color:#6a7e727c;
+    border-radius: 1rem;
+    backdrop-filter: blur(.5rem);
+    box-shadow: 0 0 1rem .5rem #6a7e72af;
+}
+
+.heading{
+    text-transform: capitalize;
+    color: #ffffff;
+}
+
+.underline{
+    width: 3rem;
+    height: .3rem;
+    background-color: rgb(255, 255, 255);
+}
+
+.input-sec{
+    background-color: #EBEAEB;
+    margin: 1rem 0;
+    padding: 1rem;
+    border-radius: .7rem;
+}
+
+.input-icon{
+    color: #888787;
+    margin-right: .7rem;
+}
+
+html input{
+    background: transparent;
+    border: none;
+    outline: none;
+    color: #888787;
+}
+
+html input::placeholder{
+    color: #888787;
+    text-transform: capitalize;
+}
+
+.pwd-sugg{
+    color: #ffffff;
+    text-transform: capitalize;
+}
+
+.click-btn{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
+
+.sign-btn{
+    background-color: white;
+    border: none;
+    outline: none;
+    padding: 1rem 3rem;
+    width: 11rem;
+    text-transform: capitalize;
+    border-radius: 5rem;
+}
 
 /* my form end */
 
