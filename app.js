@@ -4,6 +4,10 @@ let inputsCtnr = document.querySelector(".all-inp-ctnr-inner");
 let pswdSugg = document.querySelector(".pwd-sugg");
 let signUpBtn = document.querySelector("#sign-up-btn");
 let signInBtn = document.querySelector("#sign-in-btn");
+let showPswdBtn = document.querySelector("#show-pswd");
+let hidePswdBtn = document.querySelector("#hide-pswd");
+let pswdInput = document.querySelector("#password");
+
 
 signUpBtn.style.background = `rgba(47, 62, 55, 0.4)`;
 signUpBtn.style.color = `white`;
@@ -27,6 +31,18 @@ const changeColorOfBtn = (element , element2) => {
     element2.style.color = `black`;
 };
 
+const showPswd = (element , element2 , element3) => {
+   element.setAttribute("type" , "text");
+   element2.classList.add("hide");
+   element3.classList.remove("hide");
+};
+
+const hidePswd = (element , element2 , element3) => {
+    element.setAttribute("type" , "password");
+    element2.classList.remove("hide");
+    element3.classList.add("hide");
+ };
+
 signInBtn.addEventListener("click" , () => {
     updateFormHeading(formHeading , `sign in`);
     updateFormHeading(pswdSugg , `lost password`);
@@ -41,4 +57,12 @@ signUpBtn.addEventListener("click" , () => {
     slideTheUnderline(underline , 0);
     hideNameInput(inputsCtnr , 0);
     changeColorOfBtn(signUpBtn , signInBtn);
+});
+
+showPswdBtn.addEventListener("click" , () => {
+    showPswd(pswdInput , showPswdBtn , hidePswdBtn);
+});
+
+hidePswdBtn.addEventListener("click" , () => {
+    hidePswd(pswdInput , showPswdBtn , hidePswdBtn);
 });
