@@ -53,41 +53,44 @@
 <body>
 
     <div class="container d-flex justify-content-center align-items-center">
-        <div class="col-xxl-3 col-xl-4 col-lg-4 col-md-5 col-sm-6 col-6 form p-5">
-            <div class="col-12 d-flex justify-content-center align-items-center flex-column mb-5">
+        <div class="col-xxl-3 col-xl-4 col-lg-4 col-md-5 col-sm-6 col-6 form p-5" data-aos="flip-left" data-aos-duration="3000">
+            <div class="col-12 d-flex justify-content-center align-items-center flex-column mb-5" data-aos="fade-down" data-aos-duration="3000" data-aos-delay="1000">
                 <h1 class="heading mb-3">sign up</h1>
                 <div class="underline"></div>
             </div>
 
             <div class="col-12 ctnr-of-all-inp">
                 <div class="col-12 all-inp-ctnr-inner">
-                    <div class="col-12 input-sec" id="name-input-sec">
+                    <div class="col-12 input-sec" id="name-input-sec" data-aos="fade-up" data-aos-duration="2000" data-aos-delay="1500">
                         <i class="fa-solid fa-user input-icon"></i>
                         <input type="text" id="name" placeholder="name">
                     </div>
 
-                    <div class="col-12 input-sec">
+                    <div class="col-12 input-sec" data-aos="fade-up" data-aos-duration="2000" data-aos-delay="2000">
                         <i class="fa-solid fa-envelope input-icon"></i>
                         <input type="text" id="name" placeholder="email">
                     </div>
 
-                    <div class="col-12 input-sec">
+                    <div class="col-12 input-sec" data-aos="fade-up" data-aos-duration="2000" data-aos-delay="2500">
                         <i class="fa-solid fa-key input-icon"></i>
                         <input type="text" id="name" placeholder="password">
                     </div>
                 </div>
             </div>
 
-            <span class="pwd-sugg mt-2">passworsd suggestions</span> <a href="#" class="click-btn">click here!</a></p>
+            <span class="pwd-sugg mt-2" data-aos="fade-up" data-aos-duration="2000" data-aos-delay="3000">passworsd suggestions</span> <a href="#" class="click-btn" data-aos="fade-up" data-aos-duration="2000" data-aos-delay="3000">click here!</a></p>
 
             <div class="col-12 d-flex justify-content-between align-items-center mt-5">
-                <button id="sign-up-btn" class="sign-btn">sign up</button>
-                <button id="sign-in-btn" class="sign-btn">sign in</button>
+                <button id="sign-up-btn" class="sign-btn" data-aos="zoom-in" data-aos-duration="2000" data-aos-delay="3000">sign up</button>
+                <button id="sign-in-btn" class="sign-btn" data-aos="zoom-in" data-aos-duration="2000" data-aos-delay="3000">sign in</button>
             </div>
         </div>
     </div>
 
     <script src="app.js"></script>
 </body>
+<script>
+    AOS.init();
+  </script>
 
 </html>
