@@ -90,6 +90,7 @@ html body{
     margin: 1rem 0;
     padding: 1rem;
     border-radius: .7rem;
+    position: relative;
 }
 
 .input-icon{
@@ -137,6 +138,21 @@ html input::placeholder{
 
 .all-inp-ctnr-inner , .sign-btn , .underline , .heading{
     transition: 0.5s;
+}
+
+
+#show-pswd , #hide-pswd{
+    position: absolute;
+    right: 1rem;
+    top: 1.2rem;
+    color: #888787;
+    background: transparent;
+    border: none;
+    padding: 0;
+}
+
+.hide{
+    display: none;
 }
 
 /* my form end */
