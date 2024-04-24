@@ -77,12 +77,14 @@ html body{
 .heading{
     text-transform: capitalize;
     color: #ffffff;
+    transition: 0.5s;
 }
 
 .underline{
     width: 3rem;
     height: .3rem;
     background-color: rgb(255, 255, 255);
+    transition: 0.5s;
 }
 
 .input-sec{
@@ -117,6 +119,7 @@ html input::placeholder{
 .click-btn{
     text-decoration: none;
     color: rgb(0, 0, 0);
+    text-transform: capitalize;
 }
 
 .sign-btn{
@@ -127,6 +130,7 @@ html input::placeholder{
     width: 11rem;
     text-transform: capitalize;
     border-radius: 5rem;
+    transition: 0.5s;
 }
 
 /* my form end */
