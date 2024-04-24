@@ -2,7 +2,7 @@
     font-family: "Poppins", sans-serif;
     font-weight: 100;
     font-style: normal;
-  }
+}
 
 
 
@@ -77,14 +77,12 @@ html body{
 .heading{
     text-transform: capitalize;
     color: #ffffff;
-    transition: 0.5s;
 }
 
 .underline{
     width: 3rem;
     height: .3rem;
     background-color: rgb(255, 255, 255);
-    transition: 0.5s;
 }
 
 .input-sec{
@@ -130,6 +128,14 @@ html input::placeholder{
     width: 11rem;
     text-transform: capitalize;
     border-radius: 5rem;
+}
+
+.ctnr-of-all-inp{
+    overflow: hidden;
+    border-radius: .7rem;
+}
+
+.all-inp-ctnr-inner , .sign-btn , .underline , .heading{
     transition: 0.5s;
 }
 

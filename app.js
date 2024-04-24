@@ -1,6 +1,6 @@
 let formHeading = document.querySelector(".heading");
 let underline = document.querySelector(".underline");
-let nameInput = document.querySelector("#name-input-sec");
+let inputsCtnr = document.querySelector(".all-inp-ctnr-inner");
 let pswdSugg = document.querySelector(".pwd-sugg");
 let signUpBtn = document.querySelector("#sign-up-btn");
 let signInBtn = document.querySelector("#sign-in-btn");
@@ -16,8 +16,8 @@ const slideTheUnderline = (element , userVal) => {
     element.style.marginLeft = `${userVal}rem`;
 };
 
-const hideNameInput = (element) => {
-    element.style.display = `none`;
+const hideNameInput = (element , userVal) => {
+    element.style.transform = `translateY(${userVal}rem)`;
 };
 
 const changeColorOfBtn = (element , element2) => {
@@ -31,6 +31,14 @@ signInBtn.addEventListener("click" , () => {
     updateFormHeading(formHeading , `sign in`);
     updateFormHeading(pswdSugg , `lost password`);
     slideTheUnderline(underline , 6.5);
-    hideNameInput(nameInput);
+    hideNameInput(inputsCtnr , -5);
     changeColorOfBtn(signInBtn , signUpBtn);
+});
+
+signUpBtn.addEventListener("click" , () => {
+    updateFormHeading(formHeading , `sign up`);
+    updateFormHeading(pswdSugg , `password suggestions`);
+    slideTheUnderline(underline , 0);
+    hideNameInput(inputsCtnr , 0);
+    changeColorOfBtn(signUpBtn , signInBtn);
 });
