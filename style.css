@@ -42,8 +42,8 @@ html {
 
 }
 
-@media (max-width:450px) {
-    .calc {
+@media (max-width:465px) {
+    .form {
         width: 30rem !important;
     }
 }
