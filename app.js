@@ -31,17 +31,17 @@ const changeColorOfBtn = (element , element2) => {
     element2.style.color = `black`;
 };
 
-const showPswd = (element , element2 , element3) => {
-   element.setAttribute("type" , "text");
+const showHidePswd = (element , element2 , element3 , attributeVal) => {
+   element.setAttribute("type" , attributeVal);
    element2.classList.add("hide");
    element3.classList.remove("hide");
 };
 
-const hidePswd = (element , element2 , element3) => {
-    element.setAttribute("type" , "password");
-    element2.classList.remove("hide");
-    element3.classList.add("hide");
- };
+// const hidePswd = (element , element2 , element3) => {
+    
+//     element2.classList.remove("hide");
+//     element3.classList.add("hide");
+//  };
 
 signInBtn.addEventListener("click" , () => {
     updateFormHeading(formHeading , `sign in`);
@@ -60,9 +60,9 @@ signUpBtn.addEventListener("click" , () => {
 });
 
 showPswdBtn.addEventListener("click" , () => {
-    showPswd(pswdInput , showPswdBtn , hidePswdBtn);
+    showHidePswd(pswdInput , showPswdBtn , hidePswdBtn , "text");
 });
 
 hidePswdBtn.addEventListener("click" , () => {
-    hidePswd(pswdInput , showPswdBtn , hidePswdBtn);
+    showHidePswd(pswdInput , hidePswdBtn , showPswdBtn , "password");
 });
